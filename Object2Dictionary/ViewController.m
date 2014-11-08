@@ -29,7 +29,7 @@
     Body * body=[[Body alloc] init];
     body.content=@"content";
     body.isFollow=YES;
-    body.num1=100;
+    body.followCount=100;
     
     Response *rsp=[[Response alloc] init];
     

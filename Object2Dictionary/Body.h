@@ -12,7 +12,7 @@
 
 @property (nonatomic,copy)NSString * content;
 
-@property (nonatomic,assign)int num1;
+@property (nonatomic,assign)int followCount;
 @property (nonatomic,assign)BOOL isFollow;
 
 @end
