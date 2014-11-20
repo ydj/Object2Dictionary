@@ -30,5 +30,7 @@ Object2Dictionary
    
 ```
 
+--------
 
--------
+####协议
+Object2Dictionary 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。

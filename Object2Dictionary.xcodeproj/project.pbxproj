@@ -14,7 +14,7 @@
 		5C1D29361A0BC41E00E9F022 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D29351A0BC41E00E9F022 /* Images.xcassets */; };
 		5C1D29391A0BC41E00E9F022 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D29371A0BC41E00E9F022 /* LaunchScreen.xib */; };
 		5C1D29451A0BC41E00E9F022 /* Object2DictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29441A0BC41E00E9F022 /* Object2DictionaryTests.m */; };
-		5C1D29511A0BC48600E9F022 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29501A0BC48600E9F022 /* NSObject+Ext.m */; };
+		5C1D29511A0BC48600E9F022 /* NSObject+Object2Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29501A0BC48600E9F022 /* NSObject+Object2Dictionary.m */; };
 		5C1D29541A0BC51600E9F022 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29531A0BC51600E9F022 /* Response.m */; };
 		5C1D29571A0BC52B00E9F022 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29561A0BC52B00E9F022 /* Header.m */; };
 		5C1D295A1A0BC55000E9F022 /* Body.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D29591A0BC55000E9F022 /* Body.m */; };
@@ -44,8 +44,8 @@
 		5C1D293E1A0BC41E00E9F022 /* Object2DictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Object2DictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1D29431A0BC41E00E9F022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C1D29441A0BC41E00E9F022 /* Object2DictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object2DictionaryTests.m; sourceTree = "<group>"; };
-		5C1D294F1A0BC48600E9F022 /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
-		5C1D29501A0BC48600E9F022 /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
+		5C1D294F1A0BC48600E9F022 /* NSObject+Object2Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Object2Dictionary.h"; sourceTree = "<group>"; };
+		5C1D29501A0BC48600E9F022 /* NSObject+Object2Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Object2Dictionary.m"; sourceTree = "<group>"; };
 		5C1D29521A0BC51600E9F022 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		5C1D29531A0BC51600E9F022 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		5C1D29551A0BC52B00E9F022 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1D29271A0BC41E00E9F022 /* Object2Dictionary */,
+				5C1D29281A0BC41E00E9F022 /* Supporting Files */,
 				5C1D29411A0BC41E00E9F022 /* Object2DictionaryTests */,
 				5C1D29261A0BC41E00E9F022 /* Products */,
 			);
@@ -93,6 +94,8 @@
 		5C1D29271A0BC41E00E9F022 /* Object2Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				5C6266551A1E3F8C006608B3 /* src */,
+				5C6266561A1E3F9C006608B3 /* model */,
 				5C1D292C1A0BC41E00E9F022 /* AppDelegate.h */,
 				5C1D292D1A0BC41E00E9F022 /* AppDelegate.m */,
 				5C1D292F1A0BC41E00E9F022 /* ViewController.h */,
@@ -100,15 +103,6 @@
 				5C1D29321A0BC41E00E9F022 /* Main.storyboard */,
 				5C1D29351A0BC41E00E9F022 /* Images.xcassets */,
 				5C1D29371A0BC41E00E9F022 /* LaunchScreen.xib */,
-				5C1D29281A0BC41E00E9F022 /* Supporting Files */,
-				5C1D294F1A0BC48600E9F022 /* NSObject+Ext.h */,
-				5C1D29501A0BC48600E9F022 /* NSObject+Ext.m */,
-				5C1D29521A0BC51600E9F022 /* Response.h */,
-				5C1D29531A0BC51600E9F022 /* Response.m */,
-				5C1D29551A0BC52B00E9F022 /* Header.h */,
-				5C1D29561A0BC52B00E9F022 /* Header.m */,
-				5C1D29581A0BC55000E9F022 /* Body.h */,
-				5C1D29591A0BC55000E9F022 /* Body.m */,
 			);
 			path = Object2Dictionary;
 			sourceTree = "<group>";
@@ -120,6 +114,7 @@
 				5C1D292A1A0BC41E00E9F022 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Object2Dictionary;
 			sourceTree = "<group>";
 		};
 		5C1D29411A0BC41E00E9F022 /* Object2DictionaryTests */ = {
@@ -137,6 +132,28 @@
 				5C1D29431A0BC41E00E9F022 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C6266551A1E3F8C006608B3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5C1D294F1A0BC48600E9F022 /* NSObject+Object2Dictionary.h */,
+				5C1D29501A0BC48600E9F022 /* NSObject+Object2Dictionary.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		5C6266561A1E3F9C006608B3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5C1D29521A0BC51600E9F022 /* Response.h */,
+				5C1D29531A0BC51600E9F022 /* Response.m */,
+				5C1D29551A0BC52B00E9F022 /* Header.h */,
+				5C1D29561A0BC52B00E9F022 /* Header.m */,
+				5C1D29581A0BC55000E9F022 /* Body.h */,
+				5C1D29591A0BC55000E9F022 /* Body.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1D29311A0BC41E00E9F022 /* ViewController.m in Sources */,
-				5C1D29511A0BC48600E9F022 /* NSObject+Ext.m in Sources */,
+				5C1D29511A0BC48600E9F022 /* NSObject+Object2Dictionary.m in Sources */,
 				5C1D29541A0BC51600E9F022 /* Response.m in Sources */,
 				5C1D292E1A0BC41E00E9F022 /* AppDelegate.m in Sources */,
 				5C1D29571A0BC52B00E9F022 /* Header.m in Sources */,
@@ -438,6 +455,7 @@
 				5C1D294A1A0BC41E00E9F022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C1D294B1A0BC41E00E9F022 /* Build configuration list for PBXNativeTarget "Object2DictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +464,7 @@
 				5C1D294D1A0BC41E00E9F022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
