@@ -44,13 +44,10 @@
     
     ///转为json data
    NSData * data= [self getJSON_Ext:rsp options:NSJSONWritingPrettyPrinted error:nil];
-    
+    ///转为json 字符串
     NSString * jsonString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
     NSLog(@"%@",jsonString);
-
-    
-    
 
 
 }
